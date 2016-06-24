@@ -15,4 +15,14 @@ angular.module('hrApp').controller('DescriptionController',['$scope', function($
     $scope.descriptionShow = true;
     $scope.descriptionHide = false;
 
+    function toggleDescriptionShow(){
+        var elem = document.getElementById("myDesc");
+        if(elem.style.display == 'none'){
+            elem.style.display = 'block';
+
+        } else {
+            elem.style.display = 'none';
+        }
+    }
+
 }]);

@@ -3,7 +3,7 @@
  */
 
 
-angular.module('hrApp').controller('DescriptionController',['$scope', function($scope){
+angular.module('hrApp').controller('ScopesController',['$scope', function($scope){
     $scope.title = 'Two Way Binding Demo';
     $scope.childtemplate = 'templates/childscope.html';
     $scope.resetFirstVariable = function() {
