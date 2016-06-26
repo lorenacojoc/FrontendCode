@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
 </head>
+
 <body>
 <h1>Sample Application</h1>
 <div ng-app="hrApp">
     <div ng-controller="MainController">
         <p>Enter your Name: <input type="text" ng-model="name"></p>
         <p>Hello <span ng-bind="name"></span>!</p>
+
     </div>
 
 
@@ -19,10 +21,10 @@
         <div class="container">
             <div class="jumbotron" ng-show="descriptionShow">
                 <h1>{{title}}</h1>
-                <p class="lead">
+                <p class="lead" >
                     A simple demo application.
                 </p>
-                <p id="myDesc" class="lead" ng-hide="descriptionHide">
+                <p id="myDesc" class="lead"  ng-hide="descriptionHide">
                     In this application we will use AngularJS framework.
                 </p>
             </div>
@@ -35,9 +37,6 @@
 
     <!--<div ng-include="'views/main.html'"></div>-->
     <div ng-include="'views/scopes.html'"></div>
-
-
-
 </div>
 
 

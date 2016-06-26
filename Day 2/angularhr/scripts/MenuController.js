@@ -8,6 +8,10 @@ angular.module('hrApp').controller('MenuController',['$scope',function($scope){
         {
             label: "OtherScope" ,
             url: "views/childscope.html"
+        },
+        {
+            label: "DemoMath",
+            url: "views/demomath.html"
         }
     ];
 

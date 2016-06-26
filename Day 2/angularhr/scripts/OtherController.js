@@ -5,8 +5,9 @@
 angular.module('hrApp').controller('OtherController',['$scope',function($scope){
 
     $scope.title = "Two Way Binding Demo";
-   function setTitle()
-   {
-       $scope.title = "New Title";
-   }
+    
+    $scope.setTitle = function(val) {
+        val = "New Title"
+        $scope.title = val;
+    };
 }]);
