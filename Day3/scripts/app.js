@@ -33,6 +33,10 @@ $routeProvider.
         controller: 'EmployeeViewController'
     }).
 
+    when('/users', {
+        templateUrl: 'views/user.html',
+        controller: 'UserController'
+    }).
 
     otherwise({
     redirectTo : '/'
