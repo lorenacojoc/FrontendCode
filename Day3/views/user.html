@@ -8,8 +8,3 @@
 <button class="btn btn-default" ng-click="save()">Save</button>
 <button class="btn btn-default" ng-click="show_hide()">Show/Hide</button>
 
-
-<li ng-repeat="user in users" ng-class="IsFiltered(document.Filtered)">
-    <span><input type="checkbox" name="docChecked" id="doc_{{document.Id}}" ng-model="document.Filtered" /></span>
-    <span>{{document.Name}}</span>
-</li>
